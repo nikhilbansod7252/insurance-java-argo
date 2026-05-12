@@ -8,6 +8,6 @@ public class InsuranceController {
 
     @GetMapping("/")
     public String home() {
-        return "Java App Deployed on K8s 🚀";
+        return "Java App Deployed on K8s using ArgoCD🚀";
     }
 }
