@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: insurance-service
-          image: nikhilbansod/insurance-service:3
+          image: nikhilbansod/insurance-service:4
           ports:
             - containerPort: 8080
