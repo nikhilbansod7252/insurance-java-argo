@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insurance-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: insurance-service
+  template:
+    metadata:
+      labels:
+        app: insurance-service
+    spec:
+      containers:
+        - name: insurance-service
+          image: nikhilbansod/insurance-service:2
+          ports:
+            - containerPort: 8080
